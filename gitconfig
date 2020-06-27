@@ -1,0 +1,5 @@
+[user]
+	name = Igor Kornienko
+	email = igor.kornienko@smartyads.com
+[core]
+	excludesfile = /home/user/.gitignore_global
