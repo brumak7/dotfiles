@@ -1,0 +1,42 @@
+rofi.modi:                           drun,window,combi,keys,ssh,run
+
+!rofi.theme:                         sidetab-white.rasi
+
+rofi.drun-icon-theme:                Numix
+rofi.show-icons:                     true
+rofi.click-to-exit:                  false
+rofi.me-select-entry:                MouseSecondary
+rofi.me-accept-entry:                MousePrimary
+rofi.combi-modi:                     window,run
+
+
+rofi.opacity:                        100
+rofi.width:                          50
+rofi.lines:                          15
+rofi.columns:                        1 
+
+rofi.font:                           mono 12
+rofi.color-normal:                   #fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5
+rofi.color-urgent:                   #fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
+rofi.color-active:                   #fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
+rofi.color-window:                   #fdf6e3,#002b36
+
+
+rofi.bw:                             1 ! Border width
+rofi.location:                       0 ! Location on screen
+rofi.padding:                        5 ! Padding
+rofi.yoffset:                        0 ! Y-offset relative to location
+rofi.xoffset:                        0 ! X-offset relative to location
+
+rofi.terminal:                       termite
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host} 
+rofi.run-command:                    {cmd}
+rofi.run-shell-command:              {terminal} -e {cmd}
+
+rofi.cycle:                          true  ! Cycle through the results list
+
+rofi.sidebar-mode:                   false ! Enable sidebar-mode
+
+rofi.parse-hosts:                    false ! Parse hosts file for ssh mode
+rofi.parse-known-hosts:              true  ! Parse known_hosts file for ssh mode
