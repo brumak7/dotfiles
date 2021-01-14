@@ -2,15 +2,9 @@
     link:
       relink: true
 
-- clean: ['~', '~/.config']
+- clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
-    ~/.config: config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
