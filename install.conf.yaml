@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~', '~/.config']
+- clean: ['~']
 
 - link:
     ~/.profile: profile
@@ -10,7 +10,15 @@
     ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
-    ~/.config: config
+    ~/.config/bspwm: config/bspwm
+    ~/.config/sxhkd: config/sxhkd
+    ~/.config/polybar: config/polybar
+    ~/.config/rofi: config/rofi
+    ~/.config/picom: config/picom
+    ~/.config/kitty: config/kitty
+    ~/.config/dunst: config/dunst
+    ~/.config/guake: config/guake
+    ~/.config/autorandr: config/autorandr
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

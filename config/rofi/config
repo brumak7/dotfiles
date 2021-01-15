@@ -1,8 +1,8 @@
 rofi.modi:                           drun,window,combi,keys,ssh,run
 
-!rofi.theme:                         sidetab-white.rasi
+!rofi.theme:                          material.rasi
 
-rofi.drun-icon-theme:                Numix
+!rofi.drun-icon-theme:                Numix
 rofi.show-icons:                     true
 rofi.click-to-exit:                  false
 rofi.me-select-entry:                MouseSecondary

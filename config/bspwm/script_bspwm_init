@@ -19,15 +19,15 @@ bspwm_laptop_dual_monitor() {
 	echo "dual monit script"
 	notify-send "dual monit script"
 
-	my_laptop_external_monitor=$(xrandr --query | grep 'HDMI1')
+	my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-1')
 	if [[ $my_laptop_external_monitor = *connected* ]]; then
 		echo "xrandr output"
-		xrandr --output eDP1 --primary --mode 1920x1080 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --right-of eDP1
+		xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1920x1080 --rotate normal --right-of eDP-1
 	fi
 
 	# set the workspaces per monitor
-	bspc monitor eDP1 -d 1 2 3
-	bspc monitor HDMI1 -d 4 5 6 7 8 9 0
+	bspc monitor eDP-1 -d 1 2 3
+	bspc monitor HDMI-1 -d 4 5 6 7 8 9 0
 
 	# Add padding to fix issue where there is an overlap between panel
 	# and windows in LVDS1.  The panel gets covered by the windows.

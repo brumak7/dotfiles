@@ -1,10 +1,10 @@
 #
 # wm independent hotkeys
-#
+# test commit
 
 # terminal emulator urxvt
 super + Return
-	termite
+	kitty
 
 # program launcher
 super + @space
@@ -20,14 +20,18 @@ super + Escape
 	pkill -USR1 -x sxhkd; \
 	notify-send "sxhkd config reloaded"
 
+ctrl + shift + Escape
+	bspc wm -r && notify-send "bspwm reloaded"
+
 alt + Tab
 	rofi -show window
 
 super + shift + f
       nautilus
 	  
-ctrl + shift + Escape
-	termite -e htop
+super + shift + h
+	kitty -e htop
+
 #
 # bspwm hotkeys
 #
@@ -139,10 +143,6 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 #Custom keys
-
-# Sleep session
-super + shift + Escape
-	systemctl hibernate  
 
 # Screenshots
 Print
