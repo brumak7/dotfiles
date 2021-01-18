@@ -18,7 +18,6 @@
     ~/.config/picom: config/picom
     ~/.config/kitty: config/kitty   
     ~/.config/dunst: config/dunst
-    ~/.config/guake: config/guake
     ~/.config/autorandr: config/autorandr
 
 - shell:
