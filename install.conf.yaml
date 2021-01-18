@@ -1,5 +1,6 @@
 - defaults:
     link:
+      force: true
       relink: true
 
 - clean: ['~']
@@ -9,38 +10,16 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
-    ~/.zshrc: 
-      force: true
-      path: zshrc
-    ~/.config/bspwm: 
-      force: true
-      path: 
-      force: true
-      path: config/bspwm
-    ~/.config/sxhkd:
-      force: true
-      path: config/sxhkd
-    ~/.config/polybar: 
-      force: true
-      path: config/polybar
-    ~/.config/rofi: 
-      force: true
-      path: config/rofi
-    ~/.config/picom: 
-      force: true
-      path: config/picom
-    ~/.config/kitty: 
-      force: true
-      path: config/kitty   
-    ~/.config/dunst: 
-      force: true
-      path: config/dunst
-    ~/.config/guake: 
-      force: true
-      path: config/guake
-    ~/.config/autorandr: 
-      force: true
-      path: config/autorandr
+    ~/.zshrc: zshrc
+    ~/.config/bspwm: config/bspwm
+    ~/.config/sxhkd: config/sxhkd
+    ~/.config/polybar: config/polybar
+    ~/.config/rofi: config/rofi
+    ~/.config/picom: config/picom
+    ~/.config/kitty: config/kitty   
+    ~/.config/dunst: config/dunst
+    ~/.config/guake: config/guake
+    ~/.config/autorandr: config/autorandr
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
