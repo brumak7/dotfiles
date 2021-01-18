@@ -1,6 +1,6 @@
 {
     "schema_version": 2,
-    "timestamp": 1610644271,
+    "timestamp": 1610959804,
     "workspace": {
         "0": [
             [
@@ -8,20 +8,10 @@
                     "panes": [
                         {
                             "type": "term",
-                            "directory": "/home/user/Apps/android-studio/bin"
+                            "directory": "/home/user/.dotfiles"
                         }
                     ],
-                    "label": "./studio.sh",
-                    "custom_label_set": false
-                },
-                {
-                    "panes": [
-                        {
-                            "type": "term",
-                            "directory": "/home/user/.config"
-                        }
-                    ],
-                    "label": "cp -r autorandr bspwm dunst guake kitty picom rofi sxhkd ~/.dotfiles",
+                    "label": "git add --all",
                     "custom_label_set": false
                 }
             ]
